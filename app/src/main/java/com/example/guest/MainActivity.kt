@@ -14,7 +14,8 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.example.guest.ui.screens.GuestListScreen
 import com.example.guest.ui.screens.LoginScreen
-import com.example.guest.ui.screens.perfil
+import com.example.guest.ui.screens.guestProfile
+import com.example.teladecadastro.TelaCadastro
 
 
 class MainActivity : ComponentActivity() {
@@ -36,7 +37,10 @@ class MainActivity : ComponentActivity() {
                     }
 
                     composable(route = "profile"){
-                        perfil()
+                        guestProfile()
+                    }
+                    composable(route = "cadastro"){
+                        TelaCadastro()
                     }
                 }
             }

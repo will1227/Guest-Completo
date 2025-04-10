@@ -82,7 +82,9 @@ fun LoginScreen(navController: NavController) {
         Text("Esqueci minha senha", modifier = Modifier.padding(10.dp).clickable(onClick = {/*implementação da recuperação de senha*/})
         )
 
-        Text("Cadastrar-se", modifier = Modifier.padding(10.dp).clickable(onClick = {/*implementação do cadastro*/}))
+        Text("Cadastrar-se", modifier = Modifier.padding(10.dp).clickable(onClick = {
+            navController.navigate("cadastro"){}
+        }))
 
 
 
